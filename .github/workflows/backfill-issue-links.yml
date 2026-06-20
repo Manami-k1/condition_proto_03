@@ -1,0 +1,52 @@
+name: Backfill Issue Links
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Link historical commits
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const { execSync } = require('child_process');
+
+            const log = execSync(
+              'git log --pretty=format:"%H|%an|%s"'
+            ).toString();
+
+            const commits = log.split('\n');
+
+            for (const line of commits) {
+              const [sha, author, message] = line.split('|');
+
+              const issueNumbers = [
+                ...message.matchAll(/(?:^|\s)#(\d+)/g),
+              ].map((m) => Number(m[1]));
+
+              for (const issueNumber of issueNumbers) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                  body: [
+                    '🔗 Historical commit linked',
+                    '',
+                    `**Commit:** ${sha.substring(0, 7)}`,
+                    `**Message:** ${message}`,
+                    `**Author:** ${author}`,
+                  ].join('\n'),
+                });
+              }
+            }
