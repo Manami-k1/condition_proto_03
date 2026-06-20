@@ -11,7 +11,8 @@
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "knip": "knip"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -45,6 +46,7 @@
     "eslint-plugin-storybook": "^10.4.6",
     "globals": "^17.6.0",
     "jsdom": "^29.1.1",
+    "knip": "^6.17.1",
     "playwright": "^1.61.0",
     "prettier": "^3.8.4",
     "storybook": "^10.4.6",
