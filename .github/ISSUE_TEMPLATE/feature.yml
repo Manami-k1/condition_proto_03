@@ -1,0 +1,42 @@
+name: 機能追加
+description: 新しい機能の追加
+title: '[Feature] '
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: overview
+    attributes:
+      label: 概要
+      description: 実装する機能の概要を記載してください
+      placeholder: 〇〇機能を追加する
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      description: この機能が必要な理由を記載してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 対応内容
+      value: |
+        - [ ]
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    id: completion
+    attributes:
+      label: 完了条件
+      value: |
+        - [ ] 実装が完了している
+        - [ ] 単体テストが通っている
+        - [ ] Storybookで表示を確認できる
