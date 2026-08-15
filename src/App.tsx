@@ -13,7 +13,6 @@ function App() {
       <Typography variant="h4">Helloh4</Typography>
       <Typography variant="h4Bold">Helloh4Bold</Typography>
       <Typography variant="h5">Helloh5</Typography>
-      <Typography variant="h5Bold">Helloh5Bold</Typography>
       <Typography variant="bodyLarge">HellobodyLarge</Typography>
       <Typography variant="bodyLargeBold">HellobodyLargeBold</Typography>
       <Typography variant="bodyMedium">HellobodyMedium</Typography>
