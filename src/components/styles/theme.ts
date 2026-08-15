@@ -7,9 +7,12 @@ declare module '@mui/material/Typography' {
     h2Bold: true;
     h3Bold: true;
     h4Bold: true;
-    h5Bold: true;
-    body1Bold: true;
-    body2Bold: true;
+    bodyLarge: true;
+    bodyLargeBold: true;
+    bodyMedium: true;
+    bodyMediumBold: true;
+    bodySmall: true;
+    bodySmallBold: true;
   }
 }
 
@@ -54,44 +57,34 @@ const FONT = {
     fontWeight: 700,
     lineHeight: 1.5,
   },
-  h5: {
+  bodyLarge: {
     fontSize: FONT_SIZE.md,
     fontWeight: 300,
     lineHeight: 1.5,
   },
-  h5Bold: {
+  bodyLargeBold: {
     fontSize: FONT_SIZE.md,
     fontWeight: 700,
     lineHeight: 1.5,
   },
-  body1: {
-    fontSize: FONT_SIZE.md,
-    fontWeight: 300,
-    lineHeight: 1.5,
-  },
-  body1Bold: {
-    fontSize: FONT_SIZE.md,
-    fontWeight: 700,
-    lineHeight: 1.5,
-  },
-  body2: {
+  bodyMedium: {
     fontSize: FONT_SIZE.sm,
     fontWeight: 300,
     lineHeight: 1.5,
   },
-  body2Bold: {
+  bodyMediumBold: {
     fontSize: FONT_SIZE.sm,
     fontWeight: 700,
     lineHeight: 1.5,
   },
-  subtitle1: {
-    fontSize: FONT_SIZE.lg,
-    fontWeight: 500,
+  bodySmall: {
+    fontSize: FONT_SIZE.xs,
+    fontWeight: 300,
     lineHeight: 1.5,
   },
-  subtitle2: {
-    fontSize: FONT_SIZE.md,
-    fontWeight: 500,
+  bodySmallBold: {
+    fontSize: FONT_SIZE.xs,
+    fontWeight: 700,
     lineHeight: 1.5,
   },
 };
