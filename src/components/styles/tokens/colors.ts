@@ -1,29 +1,6 @@
 import { alpha } from '@mui/material';
 
-export const FONT_FAMILY = ['Hiragino Sans', 'sans-serif'].join(',');
-
-export const LAYOUT_MIN_WIDTH = '1000px';
-
-export const FONT_SIZE = {
-  '3xs': '9px',
-  '2xs': '11px',
-  xs: '12px',
-  sm: '13px',
-  md: '15px',
-  lg: '17px',
-  xl: '20px',
-  '2xl': '28px',
-  '3xl': '32px',
-} as const;
-
-export const BORDER_RADIUS = {
-  small: '2px',
-  medium: '9px',
-  large: '16px',
-} as const;
-
-// export const COLORS = {
-export const Gray = {
+export const GRAY = {
   50: '#F5F5F5',
   100: '#EFEFEF',
   200: '#E7E7E7',
@@ -36,7 +13,7 @@ export const Gray = {
   900: '#2E2E2E', // 補完
 } as const;
 
-export const Blue = {
+export const BLUE = {
   50: '#F2FAFC', // 補完
   100: '#DDF2F6', // 補完
   200: '#BFE8EF', // 補完
@@ -49,7 +26,7 @@ export const Blue = {
   900: '#314E78', // 補完
 } as const;
 
-export const Sky = {
+export const SKY = {
   50: '#F3FBFD', // 補完
   100: '#E0F5FA', // 補完
   200: '#BCEBF6', // 補完
@@ -62,7 +39,7 @@ export const Sky = {
   900: '#113A4A', // 補完
 } as const;
 
-export const Teal = {
+export const TEAL = {
   50: '#F2FCFA', // 補完
   100: '#D8F5EE', // 補完
   200: '#B5EBDD', // 補完
@@ -75,7 +52,7 @@ export const Teal = {
   900: '#163A2D', // 補完
 } as const;
 
-export const Green = {
+export const GREEN = {
   50: '#F3FAEF', // 補完
   100: '#E2F4DA', // 補完
   200: '#CDE8BF', // 補完
@@ -88,7 +65,7 @@ export const Green = {
   900: '#2D4728', // 補完
 } as const;
 
-export const Lime = {
+export const LIME = {
   50: '#FBFDF3', // 補完
   100: '#F1F8D8', // 補完
   200: '#E2EEB0', // 補完
@@ -101,7 +78,7 @@ export const Lime = {
   900: '#323C11', // 補完
 } as const;
 
-export const Yellow = {
+export const YELLOW = {
   50: '#FFFDF5', // 補完
   100: '#FFF7DE', // 補完
   200: '#F8E7B6', // 補完
@@ -114,7 +91,7 @@ export const Yellow = {
   900: '#563C0D', // 補完
 } as const;
 
-export const Orange = {
+export const ORANGE = {
   50: '#FFF8F2', // 補完
   100: '#FFECD9', // 補完
   200: '#FFD7B0', // 補完
@@ -127,7 +104,7 @@ export const Orange = {
   900: '#592C0B', // 補完
 } as const;
 
-export const Red = {
+export const RED = {
   50: '#FFF5F5', // 補完
   100: '#FFE8E8', // 補完
   200: '#FFD4D4', // 補完
@@ -140,7 +117,7 @@ export const Red = {
   900: '#6D2424', // 補完
 } as const;
 
-export const Pink = {
+export const PINK = {
   50: '#FFF6FA', // 補完
   100: '#FCE8F0', // 補完
   200: '#F7D3E2', // 補完
@@ -153,7 +130,7 @@ export const Pink = {
   900: '#4C1E30', // 補完
 } as const;
 
-export const Purple = {
+export const PURPLE = {
   50: '#F8F6FD', // 補完
   100: '#ECE7FA', // 補完
   200: '#D9CEF5', // 補完
@@ -166,7 +143,7 @@ export const Purple = {
   900: '#2A1E47', // 補完
 } as const;
 
-export const Indigo = {
+export const INDIGO = {
   50: '#F6F7FD', // 補完
   100: '#E8EBFB', // 補完
   200: '#CDD4F7', // 補完
@@ -179,7 +156,7 @@ export const Indigo = {
   900: '#202549', // 補完
 } as const;
 
-export const Brown = {
+export const BROWN = {
   50: '#FAF7F5', // 補完
   100: '#EFE6E0', // 補完
   200: '#DDCEC2', // 補完
@@ -192,7 +169,7 @@ export const Brown = {
   900: '#2D211A', // 補完
 } as const;
 
-export const Slate = {
+export const SLATE = {
   50: '#F8F9FA', // 補完
   100: '#EDF1F3', // 補完
   200: '#DCE3E8', // 補完
@@ -205,27 +182,31 @@ export const Slate = {
   900: '#242A2F', // 補完
 } as const;
 
-export const Black = {
+export const BLACK = {
   BASE: '#000000',
   BASE_04: alpha('#000000', 0.04),
 } as const;
 
-export const White = {
+export const WHITE = {
   BASE: '#FFFFFF',
 } as const;
 
-export const Success = {
-  GREEN_50: Green[50],
-  GREEN_200: Green[200],
-  GREEN_500: Green[500],
-  GREEN_700: Green[700],
-  GREEN_900: Green[900],
+export const COLORS = {
+  GRAY,
+  BLUE,
+  SKY,
+  TEAL,
+  GREEN,
+  LIME,
+  YELLOW,
+  ORANGE,
+  RED,
+  PINK,
+  PURPLE,
+  INDIGO,
+  BROWN,
+  SLATE,
 } as const;
 
-export const Error = {
-  RED_50: Red[50],
-  RED_200: Red[200],
-  RED_500: Red[500],
-  RED_700: Red[700],
-  RED_900: Red[900],
-} as const;
+export type ColorName = keyof typeof COLORS;
+export type ColorPalette = (typeof COLORS)[ColorName];

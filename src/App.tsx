@@ -1,9 +1,10 @@
-import { Button, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
+// import { UiButton } from './components/ui/elements/UiButton';
 
 function App() {
   return (
     <>
-      <Button>追加</Button>
+      {/* <UiButton color="GREEN">追加</UiButton> */}
       <Typography variant="h1">Helloh1</Typography>
       <Typography variant="h1Bold">Helloh1Bold</Typography>
       <Typography variant="h2">Helloh2</Typography>
