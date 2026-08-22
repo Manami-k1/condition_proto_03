@@ -14,9 +14,13 @@ export const UiButton: FC<UiButtonProps> = ({
       data-testid={dataTestId}
       {...rest}
       sx={{
+        width: 'fit-content',
         color: COLORS[color][600],
         '&:hover': {
           bgcolor: COLORS[color][50],
+        },
+        '&:disabled': {
+          bgcolor: COLORS.GRAY[50],
         },
         ...sx,
       }}

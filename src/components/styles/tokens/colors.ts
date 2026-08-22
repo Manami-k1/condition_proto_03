@@ -185,6 +185,7 @@ export const SLATE = {
 export const BLACK = {
   BASE: '#000000',
   BASE_04: alpha('#000000', 0.04),
+  BASE_08: alpha('#000000', 0.08),
 } as const;
 
 export const WHITE = {

@@ -1,7 +1,9 @@
 import type { ButtonProps } from '@mui/material';
-import type { ColorName } from '../../../styles/tokens/colors';
+import type { COLORS } from '../../../styles/tokens/colors';
+
+export type UiButtonColor = keyof typeof COLORS;
 
 export type UiButtonProps = Omit<ButtonProps, 'color'> & {
   dataTestId?: string;
-  color: ColorName;
+  color: UiButtonColor;
 };
