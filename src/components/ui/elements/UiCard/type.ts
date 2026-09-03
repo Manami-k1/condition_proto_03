@@ -1,5 +1,5 @@
 import type { CardProps, SxProps, Theme } from '@mui/material';
-import type { COLORS } from '../../../theme/colors';
+import { COLORS } from '../../../styles/tokens/colors';
 
 export type UiCardColor = Extract<keyof typeof COLORS, string>;
 
