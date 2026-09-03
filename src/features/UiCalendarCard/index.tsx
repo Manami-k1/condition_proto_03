@@ -16,6 +16,7 @@ export const UiCalendarCard: FC<UiCalendarCardProps> = ({
   return (
     <UiCard
       {...rest}
+      dataTestId={dataTestId}
       sx={{
         boxShadow: `0 8px 0 ${COLORS[color][400]}`,
         padding: '6px 9px',
