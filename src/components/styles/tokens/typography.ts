@@ -15,7 +15,7 @@ export const FONT_SIZE = {
 export const FONT = {
   h1: {
     fontSize: FONT_SIZE['3xl'],
-    fontWeight: 300,
+    fontWeight: 500,
     lineHeight: 1.5,
   },
   h1Bold: {
@@ -25,7 +25,7 @@ export const FONT = {
   },
   h2: {
     fontSize: FONT_SIZE['2xl'],
-    fontWeight: 300,
+    fontWeight: 500,
     lineHeight: 1.5,
   },
   h2Bold: {
@@ -35,7 +35,7 @@ export const FONT = {
   },
   h3: {
     fontSize: FONT_SIZE.xl,
-    fontWeight: 300,
+    fontWeight: 500,
     lineHeight: 1.5,
   },
   h3Bold: {
@@ -45,7 +45,7 @@ export const FONT = {
   },
   h4: {
     fontSize: FONT_SIZE.lg,
-    fontWeight: 300,
+    fontWeight: 500,
     lineHeight: 1.5,
   },
   h4Bold: {
@@ -55,7 +55,7 @@ export const FONT = {
   },
   bodyLarge: {
     fontSize: FONT_SIZE.md,
-    fontWeight: 300,
+    fontWeight: 500,
     lineHeight: 1.5,
   },
   bodyLargeBold: {
@@ -65,7 +65,7 @@ export const FONT = {
   },
   bodyMedium: {
     fontSize: FONT_SIZE.sm,
-    fontWeight: 300,
+    fontWeight: 500,
     lineHeight: 1.5,
   },
   bodyMediumBold: {
@@ -75,7 +75,7 @@ export const FONT = {
   },
   bodySmall: {
     fontSize: FONT_SIZE.xs,
-    fontWeight: 300,
+    fontWeight: 500,
     lineHeight: 1.5,
   },
   bodySmallBold: {
