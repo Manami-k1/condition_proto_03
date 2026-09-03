@@ -9,7 +9,7 @@ import { UiTypography } from '../../components/ui/elements/UiTypography';
 export const UiCalendarCard: FC<UiCalendarCardProps> = ({
   children,
   color = 'GRAY',
-  item = [],
+  item,
   dataTestId,
   ...rest
 }) => {
