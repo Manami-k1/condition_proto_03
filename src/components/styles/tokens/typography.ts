@@ -20,7 +20,7 @@ export const FONT = {
   },
   h1Bold: {
     fontSize: FONT_SIZE['3xl'],
-    fontWeight: 800,
+    fontWeight: 700,
     lineHeight: 1.5,
   },
   h2: {
@@ -30,7 +30,7 @@ export const FONT = {
   },
   h2Bold: {
     fontSize: FONT_SIZE['2xl'],
-    fontWeight: 800,
+    fontWeight: 700,
     lineHeight: 1.5,
   },
   h3: {
@@ -40,7 +40,7 @@ export const FONT = {
   },
   h3Bold: {
     fontSize: FONT_SIZE.xl,
-    fontWeight: 800,
+    fontWeight: 700,
     lineHeight: 1.5,
   },
   h4: {
@@ -50,7 +50,7 @@ export const FONT = {
   },
   h4Bold: {
     fontSize: FONT_SIZE.lg,
-    fontWeight: 800,
+    fontWeight: 700,
     lineHeight: 1.5,
   },
   bodyLarge: {
@@ -60,7 +60,7 @@ export const FONT = {
   },
   bodyLargeBold: {
     fontSize: FONT_SIZE.md,
-    fontWeight: 800,
+    fontWeight: 700,
     lineHeight: 1.5,
   },
   bodyMedium: {
@@ -70,7 +70,7 @@ export const FONT = {
   },
   bodyMediumBold: {
     fontSize: FONT_SIZE.sm,
-    fontWeight: 800,
+    fontWeight: 700,
     lineHeight: 1.5,
   },
   bodySmall: {
@@ -80,7 +80,7 @@ export const FONT = {
   },
   bodySmallBold: {
     fontSize: FONT_SIZE.xs,
-    fontWeight: 800,
+    fontWeight: 700,
     lineHeight: 1.5,
   },
 };
